@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buzón de Correo</title>
+    <style>
+        /* Estilos generales para la simulación */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .mailbox-container {
+            display: flex;
+            height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        /* Panel Lateral (Bandeja de entrada) */
+        .sidebar {
+            width: 280px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            padding: 20px 0;
+            overflow-y: auto;
+        }
+        .sidebar-header {
+            padding: 0 20px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .mailbox-item {
+            padding: 10px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .mailbox-item:hover {
+            background-color: #f5f5f5;
+        }
+        .mailbox-item.selected {
+            background-color: #e6f0ff;
+            border-left: 3px solid #007bff;
+        }
+        .item-sender {
+            font-weight: bold;
+            font-size: 14px;
+            color: #111;
+        }
+        .item-subject {
+            font-size: 14px;
+            color: #555;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 2px;
+        }
+        /* Contenido del Correo */
+        .email-content {
+            flex-grow: 1;
+            padding: 30px;
+            overflow-y: auto;
+            background-color: #ffffff;
+        }
+        .email-header {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .email-subject {
+            font-size: 26px;
+            font-weight: 300;
+            margin: 0;
+            color: #333;
+        }
+        .email-details {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .email-sender-info {
+            flex-grow: 1;
+        }
+        .email-sender {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 16px;
+        }
+        .email-recipient {
+            font-size: 12px;
+            color: #777;
+        }
+        .email-body p {
+            line-height: 1.8;
+            color: #333;
+        }
+        .email-timestamp {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mailbox-container">
+
+        <div class="sidebar">
+            <div class="sidebar-header">Bandeja de Entrada</div>
+            
+            <div class="mailbox-item selected">
+                <div class="item-sender">CEOEmpresa</div>
+                <div class="item-subject">Factura Urgente</div>
+            </div>
+            
+            <div class="mailbox-item">
+                <div class="item-sender">Notificación del Sistema</div>
+                <div class="item-subject">Actualización de permisos requerida</div>
+            </div>
+
+            <div class="mailbox-item">
+                <div class="item-sender">Recursos Humanos</div>
+                <div class="item-subject">Recordatorio: Formulario de vacaciones 2024</div>
+            </div>
+
+            <div class="mailbox-item">
+                <div class="item-sender">Juan Pérez</div>
+                <div class="item-subject">Consulta sobre proyecto X</div>
+            </div>
+            
+        </div>
+        
+        <div class="email-content">
+            
+            <div class="email-header">
+                <h1 class="email-subject">Factura Urgente, Tramitar lo antes posible</h1>
+                <div class="email-details">
+                    <div class="email-sender-info">
+                        <span class="email-sender">CEO Empresa&lt;CEOEmpresa@midomin1o.local&gt;</span>
+                        <div class="email-recipient">Para: empleado@midomin1o.local</div>
+                    </div>
+                    <div class="email-timestamp">6 de Diciembre, 18:41</div>
+                </div>
+            </div>
+
+            <div class="email-body">
+                <p>Estimado Empleado,</p>
+                
+                <p>Esta factura hay que tramitarla lo antes posible con urgencia, antes 12:00 AM, para la empresa XXXX</p>
+                
+                <p>Factura a tramitar lo antes posible &nbsp <a target="_blank" href="http:\\mail.domin1o.local\Factura.pdf.bat">Descargar</a></p>
+                
+
+                <p>Saludos cordiales,<br>CEO de la empresa</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
