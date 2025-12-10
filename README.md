@@ -1,6 +1,11 @@
 ﻿# Vectores de ataque
 
-Para esta practica se ha tenido que deshabilitar el antivirus de windows.
+En este laboratorio analizamos cómo funcionan los vectores de ataque generando un payload en un entorno controlado y observando su comportamiento con Metasploit. 
+Para ello se deshabilitó temporalmente el antivirus y se creó un ejecutable con msfvenom junto a un handler configurado para la conexión inversa. 
+El objetivo no es atacar sistemas reales, sino comprender las técnicas, herramientas y flujos usados en ciberseguridad ofensiva para mejorar la capacidad de detección y defensa.
+
+[!NOTA]
+** Para esta practica se ha tenido que deshabilitar el antivirus de windows. **
 
 # Crear payload
 
@@ -38,6 +43,7 @@ Para esta practica se ha tenido que deshabilitar el antivirus de windows.
   * https://www.startupdefense.io/es-us/blog/what-is-dwell-time-for-cybersecurity-e
   * https://www.zonamovilidad.es/las-empresas-tardan-13-horas-de-media-en-detectar-una-amenaza.html
   * https://www.itdigitalsecurity.es/endpoint/2021/09/hora-y-media-es-el-tiempo-que-tarda-un-ciberdelincuente-en-conseguir-su-objetivo
+
 
 
 
