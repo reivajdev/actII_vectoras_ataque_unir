@@ -22,6 +22,8 @@ El objetivo no es atacar sistemas reales, sino comprender las técnicas, herrami
      -f exe \ # Formato del archivo de salida: ejecutable (.exe).
      -o explorerp.exe # Nombre del archivo generado.
 ```
+# Configuración del Listener (Handler) en Metasploit
+
 ```bash
 > msfconsole -q # Abrimos consola de Metaexploit
 
@@ -43,6 +45,7 @@ El objetivo no es atacar sistemas reales, sino comprender las técnicas, herrami
   * https://www.startupdefense.io/es-us/blog/what-is-dwell-time-for-cybersecurity-e
   * https://www.zonamovilidad.es/las-empresas-tardan-13-horas-de-media-en-detectar-una-amenaza.html
   * https://www.itdigitalsecurity.es/endpoint/2021/09/hora-y-media-es-el-tiempo-que-tarda-un-ciberdelincuente-en-conseguir-su-objetivo
+
 
 
 
